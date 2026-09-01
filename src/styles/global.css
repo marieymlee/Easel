@@ -1,0 +1,40 @@
+/*
+ * Optional global baseline. Import "@easel/design-system/styles.css" to get
+ * tokens + component styles; this baseline is bundled in but only takes effect
+ * on elements under `.ds-root` (applied by <ThemeProvider>) so it never fights
+ * a host app's own reset.
+ */
+
+.ds-root {
+  color: var(--ds-color-text);
+  background-color: var(--ds-color-bg);
+  font-family: var(--ds-font-sans);
+  font-size: var(--ds-font-size-md);
+  line-height: var(--ds-line-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.ds-root *,
+.ds-root *::before,
+.ds-root *::after {
+  box-sizing: border-box;
+}
+
+.ds-root :where(h1, h2, h3, h4, p, figure, blockquote) {
+  margin: 0;
+}
+
+.ds-root :where(a) {
+  color: var(--ds-color-link);
+  text-underline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-root *,
+  .ds-root *::before,
+  .ds-root *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

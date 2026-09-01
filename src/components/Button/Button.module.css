@@ -1,0 +1,95 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-space-2);
+  border: 1px solid transparent;
+  border-radius: var(--ds-radius-md);
+  font-family: var(--ds-font-sans);
+  font-weight: var(--ds-weight-medium);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--ds-duration-fast) var(--ds-ease-standard),
+    border-color var(--ds-duration-fast) var(--ds-ease-standard),
+    color var(--ds-duration-fast) var(--ds-ease-standard);
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-focus-ring);
+}
+
+.button[data-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ---- Sizes ---- */
+.sm {
+  height: 2rem;
+  padding-inline: var(--ds-space-3);
+  font-size: var(--ds-font-size-sm);
+}
+.md {
+  height: 2.5rem;
+  padding-inline: var(--ds-space-4);
+  font-size: var(--ds-font-size-sm);
+}
+.lg {
+  height: 3rem;
+  padding-inline: var(--ds-space-5);
+  font-size: var(--ds-font-size-md);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+/* ---- Variants ---- */
+.primary {
+  background-color: var(--ds-color-accent);
+  color: var(--ds-color-text-on-accent);
+}
+.primary:hover {
+  background-color: var(--ds-color-accent-hover);
+}
+.primary:active {
+  background-color: var(--ds-color-accent-active);
+}
+
+.secondary {
+  background-color: var(--ds-color-surface);
+  border-color: var(--ds-color-border-strong);
+  color: var(--ds-color-text);
+}
+.secondary:hover {
+  background-color: var(--ds-color-surface-sunken);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--ds-color-text);
+}
+.ghost:hover {
+  background-color: var(--ds-color-surface-sunken);
+}
+
+.link {
+  background-color: transparent;
+  color: var(--ds-color-accent);
+  height: auto;
+  padding: 0;
+  border-radius: var(--ds-radius-sm);
+}
+.link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}

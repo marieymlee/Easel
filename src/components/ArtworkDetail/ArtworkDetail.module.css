@@ -1,0 +1,105 @@
+.detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: var(--ds-space-7);
+  container-type: inline-size;
+  color: var(--ds-color-text);
+}
+
+@container (max-width: 720px) {
+  .detail {
+    grid-template-columns: 1fr;
+    gap: var(--ds-space-5);
+  }
+}
+/* Fallback for browsers without container queries */
+@media (max-width: 720px) {
+  .detail {
+    grid-template-columns: 1fr;
+    gap: var(--ds-space-5);
+  }
+}
+
+.mediaPanel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--ds-space-6);
+  background-color: var(--ds-color-surface-sunken);
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-lg);
+}
+
+.image {
+  max-width: 100%;
+  max-height: 70vh;
+  height: auto;
+  object-fit: contain;
+  box-shadow: var(--ds-shadow-lg);
+  background-color: var(--ds-color-surface);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ds-space-4);
+  min-width: 0;
+  align-self: start;
+}
+
+.overline {
+  font-size: var(--ds-font-size-2xs);
+  letter-spacing: var(--ds-tracking-caps);
+  text-transform: uppercase;
+  font-weight: var(--ds-weight-semibold);
+  color: var(--ds-color-text-muted);
+}
+
+.title {
+  font-family: var(--ds-font-serif);
+  font-size: var(--ds-font-size-3xl);
+  line-height: var(--ds-line-tight);
+  letter-spacing: var(--ds-tracking-tight);
+  margin: 0;
+}
+
+.meaning {
+  font-size: var(--ds-font-size-md);
+  line-height: var(--ds-line-relaxed);
+  color: var(--ds-color-text-muted);
+  margin: 0;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--ds-color-border);
+  border: 0;
+  margin: var(--ds-space-1) 0;
+}
+
+.close {
+  position: absolute;
+  top: var(--ds-space-3);
+  right: var(--ds-space-3);
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-pill);
+  background-color: var(--ds-color-surface);
+  color: var(--ds-color-text-muted);
+  font-size: var(--ds-font-size-md);
+  line-height: 1;
+  cursor: pointer;
+}
+.close:hover {
+  color: var(--ds-color-text);
+  border-color: var(--ds-color-border-strong);
+}
+.close:focus-visible {
+  outline: none;
+  box-shadow: var(--ds-focus-ring);
+}

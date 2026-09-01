@@ -1,0 +1,77 @@
+.text {
+  margin: 0;
+  color: var(--ds-color-text);
+  font-family: var(--ds-font-sans);
+  font-weight: var(--ds-weight-regular);
+  line-height: var(--ds-line-normal);
+}
+
+/* ---- Variants ---- */
+.display {
+  font-family: var(--ds-font-serif);
+  font-size: var(--ds-font-size-4xl);
+  line-height: var(--ds-line-tight);
+  letter-spacing: var(--ds-tracking-tight);
+  font-weight: var(--ds-weight-regular);
+}
+.title {
+  font-family: var(--ds-font-serif);
+  font-size: var(--ds-font-size-3xl);
+  line-height: var(--ds-line-tight);
+  letter-spacing: var(--ds-tracking-tight);
+}
+.heading {
+  font-family: var(--ds-font-serif);
+  font-size: var(--ds-font-size-2xl);
+  line-height: var(--ds-line-snug);
+}
+.subheading {
+  font-size: var(--ds-font-size-xl);
+  line-height: var(--ds-line-snug);
+  font-weight: var(--ds-weight-medium);
+}
+.body {
+  font-size: var(--ds-font-size-md);
+}
+.caption {
+  font-size: var(--ds-font-size-sm);
+  line-height: var(--ds-line-snug);
+  color: var(--ds-color-text-muted);
+}
+.overline {
+  font-size: var(--ds-font-size-2xs);
+  line-height: var(--ds-line-snug);
+  letter-spacing: var(--ds-tracking-caps);
+  text-transform: uppercase;
+  font-weight: var(--ds-weight-semibold);
+  color: var(--ds-color-text-muted);
+}
+
+/* ---- Weight overrides ---- */
+.weight-regular { font-weight: var(--ds-weight-regular); }
+.weight-medium { font-weight: var(--ds-weight-medium); }
+.weight-semibold { font-weight: var(--ds-weight-semibold); }
+.weight-bold { font-weight: var(--ds-weight-bold); }
+
+/* ---- Color ---- */
+.color-default { color: var(--ds-color-text); }
+.color-muted { color: var(--ds-color-text-muted); }
+.color-subtle { color: var(--ds-color-text-subtle); }
+.color-accent { color: var(--ds-color-accent); }
+
+/* ---- Alignment ---- */
+.align-start { text-align: start; }
+.align-center { text-align: center; }
+.align-end { text-align: end; }
+
+/* ---- Truncation ---- */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

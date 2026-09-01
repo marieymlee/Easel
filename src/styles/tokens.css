@@ -1,0 +1,181 @@
+/*
+ * Easel design tokens
+ * ------------------------------------------------------------------
+ * Primitive scales are theme-independent. Semantic tokens (--ds-color-*,
+ * --ds-surface-*, etc.) are what components consume, and are remapped
+ * per theme. Light is the default on :root; dark is applied under
+ * [data-ds-theme="dark"] and, when no explicit choice is made, via
+ * prefers-color-scheme.
+ */
+
+:root {
+  /* ---- Primitive: neutrals (warm, paper-leaning) ---- */
+  --ds-paper-50: #fcfbf7;
+  --ds-paper-100: #f6f3ea;
+  --ds-paper-200: #ece7d9;
+  --ds-paper-300: #dcd5c2;
+  --ds-ink-400: #9b9384;
+  --ds-ink-500: #6f6656;
+  --ds-ink-600: #4b4335;
+  --ds-ink-700: #322c21;
+  --ds-ink-800: #201c15;
+  --ds-ink-900: #14110c;
+
+  /* ---- Primitive: accent (museum-label vermilion) ---- */
+  --ds-accent-100: #fce8e1;
+  --ds-accent-300: #f0a892;
+  --ds-accent-500: #c8502f;
+  --ds-accent-600: #a83f22;
+  --ds-accent-700: #82301a;
+
+  /* ---- Primitive: support hues ---- */
+  --ds-azure-500: #2f6fb0;
+  --ds-moss-500: #4f7a4a;
+  --ds-amber-500: #b8862f;
+  --ds-rose-500: #b23a5b;
+
+  /* ---- Typography ---- */
+  --ds-font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+    Georgia, "Times New Roman", serif;
+  --ds-font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  --ds-font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  --ds-weight-regular: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+  --ds-weight-bold: 700;
+
+  --ds-font-size-2xs: 0.6875rem; /* 11px */
+  --ds-font-size-xs: 0.75rem; /* 12px */
+  --ds-font-size-sm: 0.875rem; /* 14px */
+  --ds-font-size-md: 1rem; /* 16px */
+  --ds-font-size-lg: 1.125rem; /* 18px */
+  --ds-font-size-xl: 1.375rem; /* 22px */
+  --ds-font-size-2xl: 1.75rem; /* 28px */
+  --ds-font-size-3xl: 2.25rem; /* 36px */
+  --ds-font-size-4xl: 3rem; /* 48px */
+
+  --ds-line-tight: 1.15;
+  --ds-line-snug: 1.3;
+  --ds-line-normal: 1.55;
+  --ds-line-relaxed: 1.7;
+
+  --ds-tracking-tight: -0.02em;
+  --ds-tracking-normal: 0em;
+  --ds-tracking-wide: 0.04em;
+  --ds-tracking-caps: 0.12em;
+
+  /* ---- Space scale (4px base) ---- */
+  --ds-space-0: 0;
+  --ds-space-1: 0.25rem;
+  --ds-space-2: 0.5rem;
+  --ds-space-3: 0.75rem;
+  --ds-space-4: 1rem;
+  --ds-space-5: 1.5rem;
+  --ds-space-6: 2rem;
+  --ds-space-7: 3rem;
+  --ds-space-8: 4rem;
+  --ds-space-9: 6rem;
+
+  /* ---- Radius ---- */
+  --ds-radius-none: 0;
+  --ds-radius-sm: 3px;
+  --ds-radius-md: 6px;
+  --ds-radius-lg: 12px;
+  --ds-radius-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --ds-shadow-sm: 0 1px 2px rgba(20, 17, 12, 0.08);
+  --ds-shadow-md: 0 4px 14px rgba(20, 17, 12, 0.1);
+  --ds-shadow-lg: 0 18px 48px rgba(20, 17, 12, 0.18);
+
+  /* ---- Motion ---- */
+  --ds-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ds-duration-fast: 120ms;
+  --ds-duration-medium: 220ms;
+
+  /* ---- Layering ---- */
+  --ds-z-base: 0;
+  --ds-z-raised: 10;
+  --ds-z-overlay: 100;
+  --ds-z-modal: 1000;
+
+  /* ---- Focus ring ---- */
+  --ds-focus-ring: 0 0 0 3px var(--ds-accent-300);
+
+  /* ================================================================
+   * Semantic tokens — LIGHT (default)
+   * ================================================================ */
+  --ds-color-bg: var(--ds-paper-50);
+  --ds-color-surface: #ffffff;
+  --ds-color-surface-sunken: var(--ds-paper-100);
+  --ds-color-border: var(--ds-paper-300);
+  --ds-color-border-strong: var(--ds-ink-400);
+
+  --ds-color-text: var(--ds-ink-800);
+  --ds-color-text-muted: var(--ds-ink-500);
+  --ds-color-text-subtle: var(--ds-ink-400);
+  --ds-color-text-on-accent: #ffffff;
+
+  --ds-color-accent: var(--ds-accent-500);
+  --ds-color-accent-hover: var(--ds-accent-600);
+  --ds-color-accent-active: var(--ds-accent-700);
+  --ds-color-accent-subtle-bg: var(--ds-accent-100);
+
+  --ds-color-link: var(--ds-azure-500);
+}
+
+/* Dark via system preference, unless an explicit light choice is made. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-ds-theme="light"]) {
+    --ds-color-bg: var(--ds-ink-900);
+    --ds-color-surface: var(--ds-ink-800);
+    --ds-color-surface-sunken: var(--ds-ink-900);
+    --ds-color-border: var(--ds-ink-700);
+    --ds-color-border-strong: var(--ds-ink-500);
+
+    --ds-color-text: var(--ds-paper-100);
+    --ds-color-text-muted: var(--ds-ink-400);
+    --ds-color-text-subtle: var(--ds-ink-500);
+    --ds-color-text-on-accent: #ffffff;
+
+    --ds-color-accent: var(--ds-accent-500);
+    --ds-color-accent-hover: var(--ds-accent-300);
+    --ds-color-accent-active: var(--ds-accent-100);
+    --ds-color-accent-subtle-bg: rgba(200, 80, 47, 0.16);
+
+    --ds-color-link: #7db3e6;
+
+    --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --ds-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+    --ds-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.6);
+    --ds-focus-ring: 0 0 0 3px var(--ds-accent-600);
+  }
+}
+
+/* Explicit dark choice always wins. */
+:root[data-ds-theme="dark"] {
+  --ds-color-bg: var(--ds-ink-900);
+  --ds-color-surface: var(--ds-ink-800);
+  --ds-color-surface-sunken: var(--ds-ink-900);
+  --ds-color-border: var(--ds-ink-700);
+  --ds-color-border-strong: var(--ds-ink-500);
+
+  --ds-color-text: var(--ds-paper-100);
+  --ds-color-text-muted: var(--ds-ink-400);
+  --ds-color-text-subtle: var(--ds-ink-500);
+  --ds-color-text-on-accent: #ffffff;
+
+  --ds-color-accent: var(--ds-accent-500);
+  --ds-color-accent-hover: var(--ds-accent-300);
+  --ds-color-accent-active: var(--ds-accent-100);
+  --ds-color-accent-subtle-bg: rgba(200, 80, 47, 0.16);
+
+  --ds-color-link: #7db3e6;
+
+  --ds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --ds-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --ds-shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.6);
+  --ds-focus-ring: 0 0 0 3px var(--ds-accent-600);
+}
