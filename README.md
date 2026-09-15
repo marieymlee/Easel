@@ -4,9 +4,8 @@ A small React design system for art gallery and collection interfaces — warm
 paper neutrals, a serif display face, and a museum-label vermilion accent, with
 light and dark themes driven entirely by CSS custom properties.
 
-This repo also hosts [`apps/mobile`](apps/mobile) — Easel Puzzle, an Expo/React
-Native app where you reassemble a scrambled jigsaw of a painting and then
-learn its story.
+This repo also hosts [`apps/web`](apps/web) — Easel Puzzle, a website where you
+reassemble a scrambled jigsaw of a painting and then learn its story.
 
 ```
 @easel/design-system

@@ -8,11 +8,11 @@
       "port": 5178
     },
     {
-      "name": "mobile",
+      "name": "web",
       "runtimeExecutable": "npx",
       "runtimeArgs": ["expo", "start", "--web", "--port", "5180"],
       "port": 5180,
-      "cwd": "apps/mobile"
+      "cwd": "apps/web"
     }
   ]
 }
