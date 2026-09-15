@@ -127,4 +127,40 @@ export const paintings: Painting[] = [
     meaning:
       "Kandinsky is generally credited as one of the first painters to move fully into abstraction, and this piece straddles that line: cannons and a toppling building are still faintly visible under the color and gesture. He believed color and form could function like music, producing emotion directly without depicting anything real.",
   },
+  {
+    id: 11,
+    title: "The Kiss",
+    artist: "Gustav Klimt",
+    year: "1907-08",
+    source: "Belvedere, Vienna",
+    sourceUrl: "https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Gustav_Klimt_-_Der_Kuss_%28Liebespaar%29_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg/960px-Gustav_Klimt_-_Der_Kuss_%28Liebespaar%29_-_912_-_%C3%96sterreichische_Galerie_Belvedere.jpg",
+    meaning:
+      "Part of Klimt's \"Golden Phase,\" when he began mixing actual gold leaf into his paint, a technique he picked up from Byzantine mosaics he saw on a trip to Ravenna. The couple's identity was never confirmed, though many assume it's Klimt himself and his lifelong companion Emilie Flöge.",
+  },
+  {
+    id: 12,
+    title: "American Gothic",
+    artist: "Grant Wood",
+    year: "1930",
+    source: "Art Institute of Chicago",
+    sourceUrl: "https://www.artic.edu/artworks/6565",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/960px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
+    meaning:
+      "The models were Wood's sister and his dentist, not a real married couple, and the house behind them is a real Carpenter Gothic cottage he spotted in Eldon, Iowa, and painted from a sketch. It was read as an earnest tribute to rural values when it debuted; it's since become one of the most parodied images in American art.",
+  },
+  {
+    id: 13,
+    title: "Liberty Leading the People",
+    artist: "Eugène Delacroix",
+    year: "1830",
+    source: "Musée du Louvre",
+    sourceUrl: "https://en.wikipedia.org/wiki/Liberty_Leading_the_People",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg/960px-Eug%C3%A8ne_Delacroix_-_La_libert%C3%A9_guidant_le_peuple.jpg",
+    meaning:
+      "Painted to commemorate the July Revolution of 1830, even though Delacroix wasn't a revolutionary himself; he wrote to his brother that if he hadn't fought for his country, he could at least paint for it. The bare-breasted woman personifying Liberty carries the French tricolor and a bayoneted musket, striding over the bodies of the fallen.",
+  },
 ];
