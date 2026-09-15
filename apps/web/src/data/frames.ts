@@ -26,5 +26,5 @@ export const frameSlots: FrameSlot[] = [
   { left: 0.4273, top: 0.908, width: 0.0655, height: 0.0584, isOval: false },
   { left: 0.1436, top: 0.5642, width: 0.1364, height: 0.2304, isOval: false },
   { left: 0.3206, top: 0.6567, width: 0.1885, height: 0.2136, isOval: false },
-  { left: 0.4655, top: 0.022, width: 0.0527, height: 0.0523, isOval: true },
+  { left: 0.703, top: 0.3221, width: 0.1273, height: 0.16, isOval: true },
 ];
