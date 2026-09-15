@@ -18,7 +18,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/28560",
     imageUrl:
-      "https://www.artic.edu/iiif/2/6644829f-f292-c5c4-a73c-0356a6fdbf0d/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/960px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg",
     meaning:
       'Painted while Van Gogh was staying in Arles, this is his own bedroom rendered in flattened, clashing colors he said were meant to express "rest" and "sleep." He was so attached to the image that he painted three versions after the first was damaged by flooding.',
   },
@@ -41,7 +41,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/16568",
     imageUrl:
-      "https://www.artic.edu/iiif/2/3c27b499-af56-f0d5-93b5-a7f2f1ad5813/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg/960px-Claude_Monet_-_Water_Lilies_-_1933.1157_-_Art_Institute_of_Chicago.jpg",
     meaning:
       "Part of a series of roughly 250 water lily paintings Monet made in the garden he built at his home in Giverny, obsessively returning to the same pond as the light changed. There's no horizon and no sky, just water, reflection, and flowers.",
   },
@@ -53,7 +53,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/64818",
     imageUrl:
-      "https://www.artic.edu/iiif/2/a38e2828-ec6f-ece1-a30f-70243449197b/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Claude_Monet_-_Stacks_of_Wheat_%28End_of_Summer%29_-_1985.1103_-_Art_Institute_of_Chicago.jpg/960px-Claude_Monet_-_Stacks_of_Wheat_%28End_of_Summer%29_-_1985.1103_-_Art_Institute_of_Chicago.jpg",
     meaning:
       "One of roughly 25 paintings Monet made of the same two wheatstacks near his house, at different times of day and in different seasons, to study how light alone changes a scene. It's less about the wheat than about proving the subject barely matters.",
   },
@@ -76,7 +76,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/20684",
     imageUrl:
-      "https://www.artic.edu/iiif/2/f8fd76e9-c396-5678-36ed-6a348c904d27/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gustave_Caillebotte_-_Paris_Street%2C_Rainy_Day_-_1964.336_-_Art_Institute_of_Chicago.jpg/960px-Gustave_Caillebotte_-_Paris_Street%2C_Rainy_Day_-_1964.336_-_Art_Institute_of_Chicago.jpg",
     meaning:
       "Caillebotte used photographic framing and cropped figures years before photography's influence on painting was common, part of why the piece feels almost like a snapshot. He funded and organized several Impressionist exhibitions himself but has historically gotten less credit than the artists he supported.",
   },
@@ -88,9 +88,9 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/17229",
     imageUrl:
-      "https://www.artic.edu/iiif/2/3b374643-5328-3e00-c02b-5ab56e5ae8f8/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Munch_The_Scream_lithography.png",
     meaning:
-      'Munch made several versions of this image; this one is a 1895 pastel. He described the inspiration as a real moment walking at sunset when he felt "a great scream through nature," and the wavy sky and bridge are meant to depict that anxiety physically, not a literal landscape.',
+      'Munch made several versions of this image; this one is a 1895 lithograph, a black-and-white print pulled from a drawing on stone, rather than one of his famous painted versions. He described the inspiration as a real moment walking at sunset when he felt "a great scream through nature," and the wavy sky and bridge are meant to depict that anxiety physically, not a literal landscape.',
   },
   {
     id: 8,
@@ -111,7 +111,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/27992",
     imageUrl:
-      "https://www.artic.edu/iiif/2/2d484387-2509-5e8e-2c43-22f9981972eb/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg/960px-Georges_Seurat_-_A_Sunday_on_La_Grande_Jatte_--_1884_-_Google_Art_Project.jpg",
     meaning:
       "Made entirely from tiny dots of pure color instead of blended brushstrokes, a technique Seurat called Divisionism, better known today as Pointillism, relying on the viewer's eye to blend the color rather than the paint itself. It took him about two years and dozens of studies to complete.",
   },
@@ -123,7 +123,7 @@ export const paintings: Painting[] = [
     source: "Art Institute of Chicago",
     sourceUrl: "https://www.artic.edu/artworks/8991",
     imageUrl:
-      "https://www.artic.edu/iiif/2/b5bc6b66-9e6e-fe57-dcec-fc49e820e904/full/843,/0/default.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Vasily_Kandinsky%2C_Improvisation_No._30_%28Cannons%29%2C_1913%2C_1931.511%2C_Art_Institute_of_Chicago.jpg/960px-Vasily_Kandinsky%2C_Improvisation_No._30_%28Cannons%29%2C_1913%2C_1931.511%2C_Art_Institute_of_Chicago.jpg",
     meaning:
       "Kandinsky is generally credited as one of the first painters to move fully into abstraction, and this piece straddles that line: cannons and a toppling building are still faintly visible under the color and gesture. He believed color and form could function like music, producing emotion directly without depicting anything real.",
   },
