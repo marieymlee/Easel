@@ -21,7 +21,8 @@
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "dev": "expo start --web"
+    "dev": "expo start --web",
+    "build": "expo export -p web"
   },
   "private": true
 }
